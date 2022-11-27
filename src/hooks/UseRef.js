@@ -7,6 +7,7 @@ const UseRef = () => {
   // const changeHandle = () => {
   //   console.log("", value.current.value);
   // };
+
   const getHandle = () => {
     setstate(InnerValue.current.value);
   };
