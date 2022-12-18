@@ -1,13 +1,14 @@
 import { lazy, Suspense } from "react";
-// import UseRef from "./hooks/UseRef";
-const UseRef = lazy(() => import("./hooks/UseRef"));
+import UseEffect from "./hooks/UseEffect/UseEffect";
+const UseRef = lazy(() => import("./hooks/UseMemo/UseMemo"));
 
+// const ThemeContext = createContext(ThemeContext);
 function App() {
   return (
     <Suspense fallback={<div>please wait for few second</div>}>
-      <div className="App">
+      <>
         <UseRef />
-      </div>
+      </>
     </Suspense>
   );
 }
